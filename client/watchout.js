@@ -93,8 +93,8 @@ var game = function() {
     // }
     
     if ( Math.abs(enemies[i].attributes.cx.value - player.attributes.cx.value) <= 20 && Math.abs(player.attributes.cy.value - enemies[i].attributes.cy.value) <= 20 ) {
-       console.log('colliding!');
-       console.log('before incrementing collisionCount, collisionCount is', collisionCount);
+      console.log('colliding!');
+      console.log('before incrementing collisionCount, collisionCount is', collisionCount);
        //increment collisionCount
       collisionCount++;
       console.log('JUST incremented collisionCount', collisionCount);
@@ -123,7 +123,7 @@ var game = function() {
 
 setInterval(function() {
   game();
-}, 100);
+}, 20);
 
 
 var timer = setInterval(function() { currentScore++; d3.selectAll('#currentScore').text(currentScore); }, 1000);

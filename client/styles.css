@@ -10,4 +10,12 @@ svg #player {
 
 svg .update { 
   fill: red;
+  transform-origin: 193px 164px;
+  animation: spin 4s cubic-bezier(.49, .05, .32, 1.04) infinite alternate;
+}
+
+@keyframes spin {
+  50% {
+    transform: rotate(360deg);
+  }
 }
