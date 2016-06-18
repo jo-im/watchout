@@ -16,10 +16,10 @@ function dragstarted () {
   playerCircle.style('fill', 'green');
 }
 
-function dragged() {
+function dragged(d) {
   console.log('d3.event', d3.event);
-  playerCircle.attr('cx', d3.event.x);
-  playerCircle.attr('cy', d3.event.y);
+  d3.select(this).attr('cx', d[0] = d3.event.sourceEvent.x)
+                 .attr('cy', d[1] = d3.event.sourceEvent.y);
 }
 
 function dragended() {
