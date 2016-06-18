@@ -10,6 +10,7 @@
 
 svg #player {
   fill: black;
+  border: 2px solid black;
 }
 
 svg .update { 
@@ -20,12 +21,17 @@ svg {
   background: url('http://img05.deviantart.net/2fda/i/2014/060/0/0/background_naruto_by_nitopfam-d78kh4e.png');
   background-size: cover;
   background-position: center;
+  border-radius: 30px;
 }
 
 .scoreboard {
-  left: 500px;
+  left: 30px;
   top: 20px;
   position: absolute;
+  background-color: rgba(255,255,255,.5);
+  padding: 5px;
+  border-radius: 5px;
+  font-family: 'Cabin', sans-serif;
 }
 
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
