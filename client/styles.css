@@ -1,6 +1,6 @@
 /* your beautiful css styling goes here! */
 svg .enemies {
-  fill: red;
+  
 }/* Note: an asteroid image is included in this repo.
 Feel free to use it if you like. */
 
@@ -12,6 +12,12 @@ svg .update {
   fill: red;
   transform-origin: 193px 164px;
   animation: spin 4s cubic-bezier(.49, .05, .32, 1.04) infinite alternate;
+}
+
+svg {
+  background: url('http://img05.deviantart.net/2fda/i/2014/060/0/0/background_naruto_by_nitopfam-d78kh4e.png');
+  background-size: cover;
+  background-position: center;
 }
 
 @keyframes spin {
