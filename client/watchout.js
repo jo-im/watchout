@@ -50,15 +50,14 @@ var dataset = [5, 10, 15, 20, 25, 30, 35, 40, 41, 42, 43];
 var shuriken = svg.selectAll('image')
                  .data(dataset)
                  .enter()
-                 .append('svg:image')
+                 .append('image')
                  //.attr('r', '15px')
                  .attr('x', function(d) { return w * Math.random(); })
                  .attr('y', function(d) { return h * Math.random(); })
                  .attr('height', '30px')
                  .attr('width', '30px')
                  .attr('xlink:href', 'https://pixabay.com/static/uploads/photo/2013/07/12/18/46/throwing-star-153835_960_720.png')
-                 .attr('class', 'enemies');
-                 
+                 .attr('class', 'enemies');                 
 
 var update = function(data) {
   //data join

@@ -1,8 +1,12 @@
+
 /* your beautiful css styling goes here! */
-svg .enemies {
-  
-}/* Note: an asteroid image is included in this repo.
-Feel free to use it if you like. */
+.enemies {
+  position: absolute;
+  -webkit-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
+  transform-origin: 50% 50%;
+}
 
 svg #player {
   fill: black;
@@ -10,8 +14,6 @@ svg #player {
 
 svg .update { 
   fill: red;
-  transform-origin: 193px 164px;
-  animation: spin 4s cubic-bezier(.49, .05, .32, 1.04) infinite alternate;
 }
 
 svg {
@@ -20,8 +22,22 @@ svg {
   background-position: center;
 }
 
-@keyframes spin {
-  50% {
-    transform: rotate(360deg);
-  }
+.scoreboard {
+  left: 500px;
+  top: 20px;
+  position: absolute;
 }
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+/*@keyframes spin {
+  100% {
+    transform: rotate(0deg);
+
+  }
+  100% {
+    transform: rotate(360deg);
+
+  }
+}*/
